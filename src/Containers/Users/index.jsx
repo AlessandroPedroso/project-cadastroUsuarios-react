@@ -1,16 +1,24 @@
 import React, {useState, useEffect} from "react";
 import axios from 'axios';
+import { useHistory } from "react-router-dom";
 
 import Avatar from '../../assets/avatar.svg'
 import Seta from '../../assets/seta.svg'
 
 import { HiTrash } from "react-icons/hi";
 
-import { Container, H1, Image, ContainerItens, Button,User } from "./styles";
+//Componentes
+import  H1 from "../../Components/Title";
+import ContainerItens from "../../Components/ContainerItens";
+import Button from "../../Components/Button";
+//
+
+import { Container, Image,User } from "./styles";
 
 const Users = () => {
 
   const [users,setUsers] = useState([]);
+  const history = useHistory();
 
   // assim que minha aplicação for chamada vai buscar os usuários em minha API
   useEffect(()=>{
@@ -34,12 +42,16 @@ const deleteUser = async (id)=>{
 
   }
 
+  function goHome(){
+    history.push('/');
+  }
+
   return (
     <Container>
       <Image alt="logo-image" src={Avatar} />
-      <ContainerItens>
+      <ContainerItens isBlur={true}>
         <H1>Usuários</H1>
-
+        
         <ul>
           {
               users.map((user) => (
@@ -54,7 +66,7 @@ const deleteUser = async (id)=>{
           }
         </ul>
 
-        <Button> <img alt="seta" src={Seta} />  Voltar</Button>
+        <Button buttonTransparent={true} onClick={goHome}> <img alt="seta" src={Seta} />  Voltar</Button>
 
       </ContainerItens>
     </Container>

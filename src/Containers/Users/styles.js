@@ -10,7 +10,8 @@ export const Container = styled.div`
     flex-direction: column;
     align-items: center;
     gap: 40px;
-    height: 100vh;
+    height: 100%;
+    min-height: 100vh;
 
 `;
 
@@ -18,66 +19,55 @@ export const Image = styled.img`
     margin-top: 30px;
 `;
 
-export const ContainerItens = styled.div`
+// export const ContainerItens = styled.div`
 
-background: linear-gradient(157.44deg, rgba(255, 255, 255, 0.6) 0.84%, rgba(255, 255, 255, 0.6) 0.85%, rgba(255, 255, 255, 0.15) 100%);
-border-radius: 61px 61px 0px 0px;
-backdrop-filter: blur(22.5px);
-padding: 50px 36px;
-display: flex;
-flex-direction: column;
-height: 100vh;
+// background: linear-gradient(157.44deg, rgba(255, 255, 255, 0.6) 0.84%, rgba(255, 255, 255, 0.6) 0.85%, rgba(255, 255, 255, 0.15) 100%);
+// border-radius: 61px 61px 0px 0px;
+// backdrop-filter: blur(22.5px);
+// padding: 50px 36px;
+// display: flex;
+// flex-direction: column;
+// min-height: calc(100vh - 170px);
+// /* height: 100%; */
 
-`;
+// `;
 
-export const H1 = styled.h1`
-
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 700;
-font-size: 34px;
-line-height: 40px;
-text-align: center;
-color: #FFFFFF;
-margin-bottom: 80px;
-
-`;
-
-export const Button = styled.button`
-width: 342px;
-height: 74px;
-border: 1px solid white;
-color:white;
-outline: none;
-background: transparent;
-border-radius: 14px;
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 700;
-font-size: 17px;
-line-height: 28px;
-cursor: pointer;
-margin-top: 120px;
-display: flex;
-align-items: center;
-justify-content: center;
-gap: 14px;
+// export const Button = styled.button`
+// width: 342px;
+// height: 74px;
+// border: 1px solid white;
+// color:white;
+// outline: none;
+// background: transparent;
+// border-radius: 14px;
+// font-family: 'Roboto';
+// font-style: normal;
+// font-weight: 700;
+// font-size: 17px;
+// line-height: 28px;
+// cursor: pointer;
+// margin-top: 120px;
+// display: flex;
+// align-items: center;
+// justify-content: center;
+// gap: 14px;
+// text-decoration: none;
 
 
 
-&:hover{
-    opacity: 0.8;
-}
+// &:hover{
+//     opacity: 0.8;
+// }
 
-&:active{
-    opacity: 0.5;
-}
+// &:active{
+//     opacity: 0.5;
+// }
 
-img{
-    transform: rotateY(180deg);
-}
+// img{
+//     transform: rotateY(180deg);
+// }
 
-`;
+// `;
 
 export const User = styled.li`
 background: rgba(255, 255, 255, 0.25);
