@@ -3,7 +3,7 @@ import { H1 } from "./styles";
 
 const Title = ({children})=> {
 // console.log(props)
-    return <H1>{children}</H1>
+    return <H1>{children}</H1>  
 
 }
 
